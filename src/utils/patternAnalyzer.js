@@ -116,7 +116,7 @@ const isOnlyOneCharType = (password) => {
 const hasDatePattern = (password) => {
   // DD/MM/YYYY, MM/DD/YYYY, YYYY-MM-DD, etc.
   return (
-    /\d{1,4}[\/\-\.]\d{1,2}[\/\-\.]\d{1,4}/.test(password) ||
+    /\d{1,4}[\\/\-\\.]\d{1,2}[\\/\-\\.]\d{1,4}/.test(password) ||
     /\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])/.test(password)
   ); // YYMMDD format
 };
